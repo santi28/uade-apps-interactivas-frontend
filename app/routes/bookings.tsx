@@ -1,5 +1,5 @@
 import type { Route } from "./+types/home";
-import { DayPicker, useDayPicker } from "react-day-picker";
+import { DayPicker } from "react-day-picker";
 import { useState } from "react";
 import { es } from "react-day-picker/locale";
 
