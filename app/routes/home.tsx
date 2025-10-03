@@ -2,8 +2,8 @@ import type { Route } from "./+types/home";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Dr. Osvaldo - Sistema de Citas" },
-    { name: "description", content: "Página de inicio del sistema de turnos" },
+    { title: "Dr. Osvaldo Méndez - Medicina Interna" },
+    { name: "description", content: "Consultorio médico del Dr. Osvaldo Méndez. Reserva tu cita online de manera fácil y segura." },
   ];
 }
 
@@ -22,9 +22,9 @@ export default function Home() {
         
         {/* Badge de certificación médico */}
         <div className="absolute top-4 left-4 lg:top-8 lg:left-8">
-          <div className="bg-white/95 backdrop-blur-sm rounded-full px-4 py-2 shadow-lg border border-blue-100">
+          <div className="bg-white/90 backdrop-blur-sm rounded-full px-4 py-2 shadow-sm border border-blue-100">
             <div className="flex items-center space-x-2">
-              <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+              <div className="w-3 h-3 bg-green-500 rounded-full"></div>
               <span className="text-sm font-medium text-slate-700">Disponible</span>
             </div>
           </div>
@@ -32,7 +32,7 @@ export default function Home() {
 
         {/* Credenciales médicas */}
         <div className="absolute bottom-4 left-4 lg:bottom-8 lg:left-8">
-          <div className="bg-white/95 backdrop-blur-sm rounded-lg p-4 shadow-lg border border-blue-100 max-w-xs">
+          <div className="bg-white/90 backdrop-blur-sm rounded-lg p-4 shadow-sm border border-blue-100 max-w-xs">
             <div className="text-sm">
               <p className="font-semibold text-slate-800">Dr. Osvaldo Méndez</p>
               <p className="text-slate-600">Mat. Nacional: 12345</p>
@@ -68,7 +68,7 @@ export default function Home() {
 
           {/* Información profesional */}
           <div className="mb-8 lg:mb-12">
-            <div className="bg-white rounded-2xl p-6 lg:p-8 shadow-lg border border-slate-200 mb-6">
+            <div className="bg-white rounded-2xl p-6 lg:p-8 shadow-sm border border-slate-200 mb-6">
               <p className="text-base sm:text-lg text-slate-700 leading-relaxed mb-4">
                 <span className="font-semibold text-slate-800">15+ años de experiencia</span> brindando 
                 atención médica integral y personalizada. Comprometido con la excelencia en el cuidado 
@@ -90,7 +90,7 @@ export default function Home() {
             
             {/* Servicios médicos */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-4 mb-8">
-              <div className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-xl p-5 border border-blue-200/50">
+              <a href="/book" className="block bg-gradient-to-br from-blue-50 to-indigo-100 rounded-xl p-5 border border-blue-200/50 hover:bg-gradient-to-br hover:from-blue-100 hover:to-indigo-150 transition-colors duration-200">
                 <div className="flex items-start space-x-4">
                   <div className="bg-blue-600 rounded-lg p-2 flex-shrink-0">
                     <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -100,9 +100,10 @@ export default function Home() {
                   <div>
                     <h3 className="font-semibold text-slate-800 mb-1">Turnos Online</h3>
                     <p className="text-sm text-slate-600">Reserva disponible 24/7</p>
+                    <p className="text-xs text-blue-600 font-medium mt-1">→ Click para reservar</p>
                   </div>
                 </div>
-              </div>
+              </a>
               
               <div className="bg-gradient-to-br from-green-50 to-emerald-100 rounded-xl p-5 border border-green-200/50">
                 <div className="flex items-start space-x-4">
@@ -134,30 +135,54 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Botones de acción profesionales */}
-          <div className="flex flex-col sm:flex-row gap-4 mb-8 lg:mb-12">
-            <a
-              href="/login"
-              className="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-4 rounded-xl shadow-md transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg text-center border border-blue-700"
-            >
-              <span className="flex items-center justify-center">
-                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
-                </svg>
-                Acceder al Portal
-              </span>
-            </a>
-            
-            <a
-              href="/bookings"
-              className="flex-1 bg-white hover:bg-slate-50 text-slate-700 font-semibold px-6 py-4 rounded-xl border-2 border-slate-300 hover:border-blue-400 transition-all duration-300 transform hover:scale-[1.02] text-center"
-            >
-              <span className="flex items-center justify-center">
+          {/* Sección de Reserva Rápida */}
+          <div className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl p-6 lg:p-8 mb-8 lg:mb-12">
+            <div className="text-center text-white">
+              <h3 className="text-xl lg:text-2xl font-bold mb-3">Reserva tu Cita Ahora</h3>
+              <p className="text-blue-100 mb-6">Sistema de reservas online disponible 24/7</p>
+              
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+                <div className="bg-white/20 backdrop-blur-sm rounded-lg p-4">
+                  <div className="text-2xl mb-2">📅</div>
+                  <h4 className="font-semibold mb-1">Elige tu Fecha</h4>
+                  <p className="text-xs text-blue-100">Disponible de Lun a Vie</p>
+                </div>
+                
+                <div className="bg-white/20 backdrop-blur-sm rounded-lg p-4">
+                  <div className="text-2xl mb-2">🕒</div>
+                  <h4 className="font-semibold mb-1">Selecciona Horario</h4>
+                  <p className="text-xs text-blue-100">9:00 a 18:00 hs</p>
+                </div>
+                
+                <div className="bg-white/20 backdrop-blur-sm rounded-lg p-4">
+                  <div className="text-2xl mb-2">✅</div>
+                  <h4 className="font-semibold mb-1">Confirma tu Cita</h4>
+                  <p className="text-xs text-blue-100">Confirmación inmediata</p>
+                </div>
+              </div>
+              
+              <a
+                href="/book"
+                className="inline-flex items-center bg-white text-blue-600 font-semibold px-8 py-4 rounded-full hover:bg-blue-50 transition-colors duration-200 shadow-sm"
+              >
                 <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
-                Ver Disponibilidad
-              </span>
+                Reservar Mi Cita
+              </a>
+            </div>
+          </div>
+
+          {/* Acceso discreto al sistema */}
+          <div className="text-center mb-8 lg:mb-12">
+            <a
+              href="/login"
+              className="inline-flex items-center text-slate-500 hover:text-slate-700 text-sm font-medium transition-colors duration-200 group"
+            >
+              <svg className="w-4 h-4 mr-2 group-hover:text-blue-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
+              </svg>
+              Acceso para médicos y secretaría
             </a>
           </div>
 

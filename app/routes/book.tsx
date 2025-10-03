@@ -12,8 +12,8 @@ import {
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Reservar Cita - Dr. Osvaldo" },
-    { name: "description", content: "Reserva tu cita médica con Dr. Osvaldo de forma fácil y rápida" },
+    { title: "Reservar Cita - Dr. Osvaldo Méndez" },
+    { name: "description", content: "Reserva tu cita médica con el Dr. Osvaldo Méndez de forma fácil y rápida" },
   ];
 }
 

@@ -5,8 +5,8 @@ import { es } from "react-day-picker/locale";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Dr. Osvaldo - Sistema de Turnos" },
-    { name: "description", content: "Sistema de turnos para Dr. Osvaldo" },
+    { title: "Mis Citas - Dr. Osvaldo Méndez" },
+    { name: "description", content: "Gestiona tus citas médicas con el Dr. Osvaldo Méndez" },
   ];
 }
 
