@@ -51,8 +51,8 @@ export function NavBar({ title = "Panel de Administración" }: NavBarProps) {
               onClick={logout}
               className="bg-red-50 hover:bg-red-100 text-red-700 border border-red-200 px-2 sm:px-3 py-1.5 sm:py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm font-medium flex items-center space-x-1 sm:space-x-2 flex-shrink-0"
             >
-              <svg className="w-3 h-3 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
+              <svg className="w-3 h-3 sm:w-4 sm:h-4" fill="currentColor" viewBox="0 0 14 14">
+                <path fillRule="evenodd" d="M2.23 1.358a.4.4 0 0 1 .27-.109h7c.103 0 .2.04.27.109a.35.35 0 0 1 .105.247v.962a.625.625 0 1 0 1.25 0v-.962c0-.43-.174-.84-.48-1.14A1.64 1.64 0 0 0 9.5 0h-7c-.427 0-.84.167-1.145.466s-.48.71-.48 1.14v10.79c0 .43.174.839.48 1.14c.306.299.718.465 1.145.465h7c.427 0 .84-.166 1.145-.466s.48-.71.48-1.14v-.961a.625.625 0 1 0-1.25 0v.962c0 .09-.037.18-.106.247a.4.4 0 0 1-.269.108h-7c-.103 0-.2-.04-.27-.108a.35.35 0 0 1-.105-.247V1.605c0-.09.037-.18.106-.247m8.03 3.065A.63.63 0 0 0 9.876 5v1.375H5.5a.625.625 0 1 0 0 1.25h4.375V9a.625.625 0 0 0 1.067.442l2-2a.625.625 0 0 0 0-.884l-2-2a.625.625 0 0 0-.681-.135" clipRule="evenodd"/>
               </svg>
               <span className="hidden sm:block">Salir</span>
             </button>
