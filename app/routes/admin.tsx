@@ -1,7 +1,8 @@
 import type { Route } from "./+types/admin";
 import { useState } from "react";
-import { TabButton } from "../components/admin";
-import { AppointmentsTab, InsurancesTab } from "../pages/admin";
+import { TabButton } from "../components/admin/TabButton";
+import { AppointmentsTab } from "../pages/admin/AppointmentsTab";
+import { InsurancesTab } from "../pages/admin/InsurancesTab";
 
 export function meta({}: Route.MetaArgs) {
   return [

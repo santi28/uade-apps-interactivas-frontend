@@ -1,14 +1,12 @@
 import type { Route } from "./+types/book";
 import { useState } from "react";
 import type { BookingStep, BookingData } from "../types/booking";
-import {
-  ProgressIndicator,
-  DateSelection,
-  TimeSelection,
-  PatientForm,
-  BookingConfirmation,
-  BookingSuccess
-} from "../components/booking";
+import { ProgressIndicator } from "../components/booking/ProgressIndicator";
+import { DateSelection } from "../components/booking/DateSelection";
+import { TimeSelection } from "../components/booking/TimeSelection";
+import { PatientForm } from "../components/booking/PatientForm";
+import { BookingConfirmation } from "../components/booking/BookingConfirmation";
+import { BookingSuccess } from "../components/booking/BookingSuccess";
 
 export function meta({}: Route.MetaArgs) {
   return [

@@ -143,19 +143,31 @@ export default function Home() {
               
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 mb-4 sm:mb-6">
                 <div className="bg-white/20 backdrop-blur-sm rounded-lg p-3 sm:p-4">
-                  <div className="text-xl sm:text-2xl mb-1 sm:mb-2">📅</div>
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 mx-auto mb-1 sm:mb-2 flex items-center justify-center">
+                    <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                  </div>
                   <h4 className="font-semibold mb-1 text-sm sm:text-base">Elige tu Fecha</h4>
                   <p className="text-xs text-blue-100">Disponible de Lun a Vie</p>
                 </div>
                 
                 <div className="bg-white/20 backdrop-blur-sm rounded-lg p-3 sm:p-4">
-                  <div className="text-xl sm:text-2xl mb-1 sm:mb-2">🕒</div>
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 mx-auto mb-1 sm:mb-2 flex items-center justify-center">
+                    <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
                   <h4 className="font-semibold mb-1 text-sm sm:text-base">Selecciona Horario</h4>
                   <p className="text-xs text-blue-100">9:00 a 18:00 hs</p>
                 </div>
                 
                 <div className="bg-white/20 backdrop-blur-sm rounded-lg p-3 sm:p-4">
-                  <div className="text-xl sm:text-2xl mb-1 sm:mb-2">✅</div>
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 mx-auto mb-1 sm:mb-2 flex items-center justify-center">
+                    <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
                   <h4 className="font-semibold mb-1 text-sm sm:text-base">Confirma tu Cita</h4>
                   <p className="text-xs text-blue-100">Confirmación inmediata</p>
                 </div>

@@ -2,7 +2,9 @@ import { useState } from "react";
 import type { Insurance } from "../../types/admin";
 import { mockInsurances } from "../../data/mock-data";
 import { InsuranceStats } from "../../components/admin/InsuranceStats";
-import { InsuranceGrid, InsuranceFormModal, DeleteConfirmModal } from "../../components/admin";
+import { InsuranceGrid } from "../../components/admin/InsuranceGrid";
+import { InsuranceFormModal } from "../../components/admin/InsuranceFormModal";
+import { DeleteConfirmModal } from "../../components/admin/DeleteConfirmModal";
 
 export const InsurancesTab = () => {
   const [insurances, setInsurances] = useState<Insurance[]>(mockInsurances);

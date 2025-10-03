@@ -1,6 +1,7 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import type { Insurance } from "../../types/admin";
-import { validateCreateInsurance, validateUpdateInsurance, type CreateInsuranceInput } from "../../schemas";
+import { useInsuranceStore } from "../../stores/insuranceStore";
+import { validateCreateInsurance, validateUpdateInsurance, type CreateInsuranceInput } from "../../schemas/validation";
 
 interface InsuranceFormModalProps {
   isOpen: boolean;

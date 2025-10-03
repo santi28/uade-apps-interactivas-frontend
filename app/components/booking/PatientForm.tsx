@@ -1,7 +1,7 @@
 import { useState } from "react";
 import type { BookingStepProps, PatientInfo } from "../../types/booking";
 import { insuranceOptions } from "../../data/booking-data";
-import { PatientInfoSchema } from "../../schemas";
+import { PatientInfoSchema } from "../../schemas/validation";
 
 interface InputFieldProps {
   label: string;
