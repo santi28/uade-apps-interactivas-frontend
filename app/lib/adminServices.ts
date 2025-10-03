@@ -1,5 +1,4 @@
 // Tipos para la gestión de citas y obras sociales
-
 export interface HealthInsurance {
   id: string;
   name: string;
@@ -61,7 +60,7 @@ const MOCK_HEALTH_INSURANCES: HealthInsurance[] = [
   }
 ];
 
-// Datos simulados de citas
+// Datos simulados de citas neurológicas
 const MOCK_APPOINTMENTS: Appointment[] = [
   {
     id: '1',
@@ -70,7 +69,7 @@ const MOCK_APPOINTMENTS: Appointment[] = [
     patientPhone: '+54 11 1234-5678',
     date: '2025-10-03',
     time: '09:00',
-    reason: 'Consulta general',
+    reason: 'Cefaleas recurrentes - Evaluación inicial',
     healthInsurance: '1', // OSDE
     status: 'solicitada',
     createdAt: '2025-10-02T10:00:00Z'
@@ -82,7 +81,7 @@ const MOCK_APPOINTMENTS: Appointment[] = [
     patientPhone: '+54 11 2345-6789',
     date: '2025-10-03',
     time: '10:30',
-    reason: 'Control de rutina',
+    reason: 'Control de epilepsia - Ajuste de medicación',
     healthInsurance: '2', // Swiss Medical
     status: 'confirmada',
     createdAt: '2025-10-02T11:00:00Z'
@@ -94,7 +93,7 @@ const MOCK_APPOINTMENTS: Appointment[] = [
     patientPhone: '+54 11 3456-7890',
     date: '2025-10-03',
     time: '14:00',
-    reason: 'Primera consulta',
+    reason: 'Trastornos de memoria - Primera consulta',
     healthInsurance: '3', // Galeno
     status: 'solicitada',
     createdAt: '2025-10-02T12:00:00Z'
@@ -106,7 +105,7 @@ const MOCK_APPOINTMENTS: Appointment[] = [
     patientPhone: '+54 11 4567-8901',
     date: '2025-10-04',
     time: '09:30',
-    reason: 'Dolor de espalda',
+    reason: 'Neuropatía periférica - Seguimiento',
     healthInsurance: '4', // Medicus
     status: 'solicitada',
     createdAt: '2025-10-02T14:00:00Z'
@@ -118,10 +117,34 @@ const MOCK_APPOINTMENTS: Appointment[] = [
     patientPhone: '+54 11 5678-9012',
     date: '2025-10-04',
     time: '11:00',
-    reason: 'Renovación de receta',
+    reason: 'Esclerosis múltiple - Control mensual',
     healthInsurance: '5', // Particular
     status: 'confirmada',
     createdAt: '2025-10-02T15:00:00Z'
+  },
+  {
+    id: '6',
+    patientName: 'Roberto Fernández',
+    patientEmail: 'roberto.fernandez@email.com',
+    patientPhone: '+54 11 6789-0123',
+    date: '2025-10-05',
+    time: '10:00',
+    reason: 'Síndrome del túnel carpiano - Evaluación EMG',
+    healthInsurance: '1', // OSDE
+    status: 'solicitada',
+    createdAt: '2025-10-03T09:00:00Z'
+  },
+  {
+    id: '7',
+    patientName: 'Patricia Morales',
+    patientEmail: 'patricia.morales@email.com',
+    patientPhone: '+54 11 7890-1234',
+    date: '2025-10-05',
+    time: '15:30',
+    reason: 'Alzheimer incipiente - Seguimiento cognitivo',
+    healthInsurance: '2', // Swiss Medical
+    status: 'confirmada',
+    createdAt: '2025-10-03T11:30:00Z'
   }
 ];
 

@@ -6,7 +6,7 @@ import { InsurancesTab } from "../pages/admin/InsurancesTab";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Administración - Dr. Osvaldo" },
+    { title: "Administración - Dr. Osvaldo Méndez, Neurólogo" },
     { name: "description", content: "Panel de administración del sistema de turnos" },
   ];
 }
@@ -19,7 +19,7 @@ export default function Admin() {
       <header className="p-4 border-b w-full border-neutral-300 bg-white sticky top-0 z-10">
         <div className="flex justify-between items-center max-w-7xl mx-auto">
           <a href="/">
-            <p className="text-2xl font-bold text-gray-800">Dr. Osvaldo - Admin</p>
+            <p className="text-2xl font-bold text-gray-800">Dr. Osvaldo Méndez - Neurología</p>
           </a>
           <nav className="flex space-x-4">
             <a href="/" className="text-gray-600 hover:text-gray-900 text-sm font-medium transition-colors">

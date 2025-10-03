@@ -1,6 +1,6 @@
 import type { Appointment, Insurance } from "../types/admin";
 
-// Datos simulados de citas
+// Datos simulados de citas neurológicas
 export const mockAppointments: Appointment[] = [
   {
     id: "1",
@@ -11,7 +11,7 @@ export const mockAppointments: Appointment[] = [
     time: "09:30",
     insurance: "OSDE",
     status: "confirmed",
-    notes: "Primera consulta"
+    notes: "Migrañas con aura - Evaluación inicial"
   },
   {
     id: "2",
@@ -22,6 +22,7 @@ export const mockAppointments: Appointment[] = [
     time: "10:00",
     insurance: "Swiss Medical",
     status: "pending",
+    notes: "Temblor esencial - Primera consulta"
   },
   {
     id: "3",
@@ -32,7 +33,7 @@ export const mockAppointments: Appointment[] = [
     time: "14:30",
     insurance: "Galeno",
     status: "confirmed",
-    notes: "Control mensual"
+    notes: "Parkinson - Control de medicación"
   },
   {
     id: "4",
@@ -43,6 +44,7 @@ export const mockAppointments: Appointment[] = [
     time: "09:00",
     insurance: "Particular",
     status: "cancelled",
+    notes: "Vértigo - Evaluación pendiente"
   },
   {
     id: "5",
@@ -53,7 +55,7 @@ export const mockAppointments: Appointment[] = [
     time: "15:30",
     insurance: "OSDE",
     status: "completed",
-    notes: "Revisión post-operatoria"
+    notes: "Post-ACV - Rehabilitación neurológica"
   }
 ];
 

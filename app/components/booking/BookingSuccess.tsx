@@ -128,18 +128,12 @@ export const BookingSuccess = ({ bookingData }: BookingSuccessProps) => {
           </div>
 
           {/* Botones de acción */}
-          <div className="flex flex-col sm:flex-row gap-3 pt-4">
+          <div className="flex justify-center pt-4">
             <a
               href="/"
-              className="flex-1 bg-blue-600 hover:bg-blue-700 text-white text-center font-medium py-3 px-4 rounded-lg transition-colors"
+              className="bg-blue-600 hover:bg-blue-700 text-white text-center font-medium py-3 px-8 rounded-lg transition-colors"
             >
               Volver al inicio
-            </a>
-            <a
-              href="/bookings"
-              className="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-700 text-center font-medium py-3 px-4 rounded-lg transition-colors border border-gray-300"
-            >
-              Ver mis citas
             </a>
           </div>
         </div>

@@ -1,6 +1,3 @@
-// Sistema de autenticación simulado
-// Esto será fácil de migrar a un backend real más adelante
-
 export interface User {
   id: string;
   email: string;

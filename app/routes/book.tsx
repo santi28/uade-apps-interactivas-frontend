@@ -10,8 +10,8 @@ import { BookingSuccess } from "../components/booking/BookingSuccess";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Reservar Cita - Dr. Osvaldo Méndez" },
-    { name: "description", content: "Reserva tu cita médica con el Dr. Osvaldo Méndez de forma fácil y rápida" },
+    { title: "Reservar Cita - Dr. Osvaldo Méndez, Neurólogo" },
+    { name: "description", content: "Reserva tu cita neurológica con el Dr. Osvaldo Méndez de forma fácil y rápida" },
   ];
 }
 
@@ -111,9 +111,7 @@ export default function BookPage() {
               <a href="/" className="text-gray-600 hover:text-gray-900 text-sm font-medium transition-colors">
                 Inicio
               </a>
-              <a href="/bookings" className="text-gray-600 hover:text-gray-900 text-sm font-medium transition-colors">
-                Mis citas
-              </a>
+
             </nav>
           </div>
         </header>
@@ -138,9 +136,7 @@ export default function BookPage() {
             <a href="/" className="text-gray-600 hover:text-gray-900 text-sm font-medium transition-colors">
               Inicio
             </a>
-            <a href="/bookings" className="text-gray-600 hover:text-gray-900 text-sm font-medium transition-colors">
-              Mis citas
-            </a>
+
           </nav>
         </div>
       </header>

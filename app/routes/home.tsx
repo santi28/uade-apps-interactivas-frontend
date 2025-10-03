@@ -2,8 +2,8 @@ import type { Route } from "./+types/home";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Dr. Osvaldo Méndez - Medicina Interna" },
-    { name: "description", content: "Consultorio médico del Dr. Osvaldo Méndez. Reserva tu cita online de manera fácil y segura." },
+    { title: "Dr. Osvaldo Méndez - Neurólogo" },
+    { name: "description", content: "Consultorio neurológico del Dr. Osvaldo Méndez. Especialista en neurología con amplia experiencia. Reserva tu cita online de manera fácil y segura." },
   ];
 }
 
@@ -14,7 +14,7 @@ export default function Home() {
       <div className="relative w-full lg:w-1/2 h-64 sm:h-72 md:h-80 lg:h-screen lg:sticky lg:top-0 order-2 lg:order-1">
         <img
           src="/osvaldo.png"
-          alt="Dr. Osvaldo Méndez - Especialista en Medicina Interna"
+          alt="Dr. Osvaldo Méndez - Especialista en Neurología"
           className="w-full h-full object-cover object-center"
         />
         {/* Overlay médico profesional */}
@@ -36,7 +36,7 @@ export default function Home() {
             <div className="text-xs sm:text-sm">
               <p className="font-semibold text-slate-800">Dr. Osvaldo Méndez</p>
               <p className="text-slate-600">Mat. Nacional: 12345</p>
-              <p className="text-slate-600">Medicina Interna</p>
+              <p className="text-slate-600">Neurología</p>
             </div>
           </div>
         </div>
@@ -52,14 +52,14 @@ export default function Home() {
               <svg className="w-3 h-3 sm:w-4 sm:h-4 mr-1.5 sm:mr-2" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V4a2 2 0 00-2-2H6zm4 14a1 1 0 100-2 1 1 0 000 2zm-2-4a1 1 0 011-1h2a1 1 0 011 1v1a1 1 0 01-1 1H9a1 1 0 01-1-1v-1z" clipRule="evenodd" />
               </svg>
-              Medicina Especializada
+              Neurología
             </div>
             
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-2 sm:mb-3 lg:mb-4 text-slate-800 leading-tight">
               Dr. Osvaldo Méndez
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-slate-600 mb-1 sm:mb-2">
-              Especialista en Medicina Interna
+              Especialista en Neurología
             </p>
             <p className="text-xs sm:text-sm md:text-base text-slate-500">
               Sistema de Gestión de Citas Médicas
@@ -70,9 +70,9 @@ export default function Home() {
           <div className="mb-6 sm:mb-8 lg:mb-12">
             <div className="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8 shadow-sm border border-slate-200 mb-4 sm:mb-6">
               <p className="text-sm sm:text-base md:text-lg text-slate-700 leading-relaxed mb-3 sm:mb-4">
-                <span className="font-semibold text-slate-800">15+ años de experiencia</span> brindando 
-                atención médica integral y personalizada. Comprometido con la excelencia en el cuidado 
-                de la salud de mis pacientes.
+                <span className="font-semibold text-slate-800">15+ años de experiencia</span> en neurología, 
+                brindando atención especializada en trastornos del sistema nervioso. Comprometido con 
+                el diagnóstico preciso y tratamiento integral de patologías neurológicas.
               </p>
               
               {/* Certificaciones - Responsive */}
@@ -83,7 +83,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center text-xs sm:text-sm text-slate-600">
                   <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-green-500 rounded-full mr-2 sm:mr-3 flex-shrink-0"></div>
-                  <span className="break-words">Miembro de la Sociedad de Medicina Interna</span>
+                  <span className="break-words">Miembro de la Sociedad Neurológica Argentina</span>
                 </div>
               </div>
             </div>
@@ -113,8 +113,8 @@ export default function Home() {
                     </svg>
                   </div>
                   <div className="min-w-0 flex-1">
-                    <h3 className="font-semibold text-slate-800 mb-1 text-sm sm:text-base">Atención Integral</h3>
-                    <p className="text-xs sm:text-sm text-slate-600">Consultas médicas completas</p>
+                    <h3 className="font-semibold text-slate-800 mb-1 text-sm sm:text-base">Atención Neurológica</h3>
+                    <p className="text-xs sm:text-sm text-slate-600">Evaluación neurológica completa</p>
                   </div>
                 </div>
               </div>
@@ -127,8 +127,8 @@ export default function Home() {
                     </svg>
                   </div>
                   <div className="min-w-0 flex-1">
-                    <h3 className="font-semibold text-slate-800 mb-1 text-sm sm:text-base">Historial Digital Seguro</h3>
-                    <p className="text-xs sm:text-sm text-slate-600">Acceso completo a tu información médica protegida</p>
+                    <h3 className="font-semibold text-slate-800 mb-1 text-sm sm:text-base">Seguimiento Neurológico</h3>
+                    <p className="text-xs sm:text-sm text-slate-600">Historial clínico digital y seguimiento de tratamientos</p>
                   </div>
                 </div>
               </div>
