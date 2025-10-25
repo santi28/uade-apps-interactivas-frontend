@@ -180,9 +180,6 @@ export default function Login() {
 
           {/* Footer discreto - Responsive */}
           <div className="text-center mt-6 sm:mt-8">
-            <p className="text-xs sm:text-sm text-slate-500">
-              © {new Date().getFullYear()} Consultorio Dr. Osvaldo Méndez
-            </p>
             <p className="text-xs text-slate-400 mt-1">
               Sistema de turnos médicos
             </p>
